@@ -1,5 +1,23 @@
 
-
+.module {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 4px 10px 1px rgba(0,0,0,0.3);
+  background: linear-gradient(to top right, #42E695, #2BB2B8);
+}
+.module > *:last-child {
+  text-align: center;
+}
+h3 {
+  margin-top: 0px;
+}
+.bottomButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

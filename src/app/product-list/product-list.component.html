@@ -1,6 +1,6 @@
 <h2>Products</h2>
 
-<div *ngFor="let product of products; index as productId">
+<div class="module col-1-2" *ngFor="let product of products; index as productId">
 
   <h3>
     <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
@@ -11,16 +11,16 @@
   <p *ngIf="product.description">
     Description: {{ product.description }}
   </p>
+  <div class="bottomButtons">
+    <button class="shareButton" (click)="share()">
+    Share
+    </button>
 
-  <button (click)="share()">
-  Share
-  </button>
-
-  <app-product-alerts
-    [product]="product" 
-    (notify)="onNotify()">
-  </app-product-alerts>
-
+    <app-product-alerts class="notifyButton"
+      [product]="product" 
+      (notify)="onNotify()">
+    </app-product-alerts>
+  </div>
 </div>
 
 
