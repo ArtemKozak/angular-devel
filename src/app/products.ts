@@ -2,7 +2,19 @@ export const products = [
   {
     name: 'iPhone XL',
     price: 799,
-    description: 'A large phone with one of the best screens'
+    description: 'A large phone with one of the best screens',
+    rating: 4.8 
+  },
+  {
+    name: 'Phone Mini',
+    price: 699,
+    description: 'A great phone with one of the best cameras',
+    rating: 3.8 
+  },
+  {
+    name: 'Phone Mini',
+    price: 699,
+    rating: 3.8 
   },
   {
     name: 'Phone Mini',
@@ -12,26 +24,20 @@ export const products = [
   {
     name: 'Phone Mini',
     price: 699,
-  },
-  {
-    name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
-  },
-  {
-    name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
+    description: 'A great phone with one of the best cameras',
+    rating: 3.8 
   },
     {
     name: 'iPhone XL',
     price: 799,
-    description: 'A large phone with one of the best screens'
+    description: 'A large phone with one of the best screens',
+    rating: 4.8 
   },
     {
     name: 'iPhone XL',
     price: 799,
-    description: 'A large phone with one of the best screens'
+    description: 'A large phone with one of the best screens',
+    rating: 4.8 
   },
   {
     name: 'Phone Mini',
@@ -45,7 +51,8 @@ export const products = [
     {
     name: 'iPhone XL',
     price: 799,
-    description: 'A large phone with one of the best screens'
+    description: 'A large phone with one of the best screens',
+    rating: 4.8 
   },
   {
     name: 'iPhone Mini',
@@ -55,7 +62,8 @@ export const products = [
   {
     name: 'Phone Standard',
     price: 299,
-    description: ''
+    description: '',
+    rating: 3.1 
   }
 ];
 

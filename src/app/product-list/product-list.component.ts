@@ -10,6 +10,14 @@ import { products } from '../products';
 export class ProductListComponent {
   products = products;
 
+  progressWidth = 799/800*100;
+  isNavy = true;
+ 
+  currentClasses={
+      width: this.progressWidth + '%',
+      navyColor: this.isNavy
+  }
+
   share() {
     window.alert('The product has been shared!');
   }
