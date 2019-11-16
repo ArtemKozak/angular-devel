@@ -39,7 +39,7 @@ h5{
   cursor: pointer;
   outline: none  !important;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1199px) {
     .card {
         max-height: 350px;
     }
@@ -53,6 +53,7 @@ h5{
     .card {
         max-width: 300px;
         min-width: 150px;
+        margin: auto;
     }
     h5{
       font-size: 0.8em;
@@ -61,11 +62,12 @@ h5{
       font-size: 0.6em;
     }
 }
-@media (max-width: 574px) {
+@media (max-width: 575px) {
     .card {
         max-height: 340px;
         max-width: 250px;
         min-width: 190px;
+        margin: auto;
     }
     h5{
       font-size: 0.9em;
