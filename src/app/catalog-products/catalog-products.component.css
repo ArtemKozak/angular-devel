@@ -1,0 +1,39 @@
+.
+.form-group {
+  padding-right: 15px;
+  margin: 3px;
+  }
+.form-control {
+  margin-left: 5px;
+}
+.container-fluid{
+  padding: 0;
+}
+.container-product {
+  width: auto;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+.product-row{
+  margin: 0;
+  width: 100%
+}
+.product-description{
+  min-width: 230px;
+}
+.product-image {
+  width: 270px;
+}
+.price-row {
+  text-align: right;
+}
+@media (max-width: 576px) { 
+  .container-product {
+    width: 300px !important;
+  }
+  .card-title {
+    padding-top: 15px;
+  }
+}
