@@ -1,0 +1,104 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="container-fluid" id="breadcrumbs">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a [routerLink]="['/']">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Телефоны</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="container" id="category-header">
+    <div class="container-fluid">
+      <div class="heading">
+        <h1>Телефоны</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-fixed col-3" id="filters">
+      <div class="cell-fixed filters">
+        <div class="filters-hd" data-filters-head="">
+          <p class="h3"><i class="fa-filter"></i>Фильтры</p>
+        </div>
+        <div class="tabs tabs-catalog">
+          <ul data-tab-nav="tabs-filters">
+            <li class="active"><span>Все</span></li>
+            <li><span>Выбранные</span></li>        
+          </ul>
+        </div>
+        <div class="filters-bd tabs-content" data-tab-content="tabs-filters">
+        </div>
+      </div>
+    </div>
+    <div class="col-fixed col-9" id="product-list">
+      <div class="wrapper-sorting">
+        <div class="sorting clearfix">
+          <div class="container-fluid" id="app-sorting">
+            <ul class="sorting-in">
+              <li data-sortbox="select" data-sortbox-mode="cookie" data-ident="sort">
+                <span data-sortbox-title="">Сортировать по:</span>
+                <select class="field" name="sort" data-tracking-id="sort-1">
+                    <option value="0" data-value="0" data-order-token="" data-param-name="sort" data-tracking-id="">возрастанию цены</option>
+                    <option value="1" data-value="1" data-order-token="" data-param-name="sort" data-tracking-id="">убыванию цены</option>
+                    <option value="2" data-value="2" data-order-token="" data-param-name="sort" data-tracking-id="">популярности</option>
+                    <option value="3" selected="" data-active-element="" data-value="3" data-order-token="" data-param-name="sort" data-tracking-id="">новизне </option>
+                    <option value="4" data-value="4" data-order-token="" data-param-name="sort" data-tracking-id="">оценке товара</option>
+                    <option value="5" data-value="5" data-order-token="" data-param-name="sort" data-tracking-id="">наименованию</option>
+                </select>
+              </li>
+              <li data-sortbox="select" data-sortbox-mode="cookie" data-ident="sr">
+                <span data-sortbox-title="">Вначале:</span>
+                <select class="field" name="sr" data-tracking-id="sort-2">
+                  <option value="0" selected="" data-active-element="" data-value="0" data-order-token="" data-param-name="sr" data-tracking-id="">все товары</option>
+                    <option value="4" data-value="4" data-order-token="" data-param-name="sr" data-tracking-id="">с вопросами</option>
+                    <option value="1" data-value="1" data-order-token="" data-param-name="sr" data-tracking-id="">с акциями</option>
+                    <option value="2" data-value="2" data-order-token="" data-param-name="sr" data-tracking-id="">с отзывами</option>
+                    <option value="3" data-value="3" data-order-token="" data-param-name="sr" data-tracking-id="">с видео</option>
+                </select>
+              </li>            
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="viewbox catalog-products">
+        <div class="title-viewbox">
+          <ul class="products-list cell-list">
+            <li class="product-item" *ngFor="let product of products; index as productId">
+              <div class="item-image">
+                <a [routerLink]="['/products', productId]">
+                  <img class="img-product" src="https://mrfix.ua/media/catalog/product/cache/f073062f50e48eb0f0998593e568d857/a/p/apple_iphone_11_white_mrfix1.png" [title]="product.name + ' details'">
+                </a>
+              </div>
+              <div clas="item-info">
+                <p class="h4">
+                  <a [routerLink]="['/products', productId]" [title]="product.name + ' details'">
+                  {{ product.name }}
+                  </a>
+                </p>
+                <div class="text">
+                  <div class="text">
+                      <p *ngIf="product.description">
+                        Описание: {{ product.description }}
+                      </p>
+                  </div>
+                </div>
+                <div class="item-price stick-bottom">
+                  <div class="stick-pull cell-xs-6">
+                    <div class="price-md">
+                      <span class="value">{{ product.price | currency}}</span>
+                    </div>
+                  </div>
+                  <div class="stick-pull cell-xs-6">
+                    <button (click)="addToCart(product)">Купить</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
