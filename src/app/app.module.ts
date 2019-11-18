@@ -15,6 +15,8 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { CatalogProductsComponent } from './catalog-products/catalog-products.component';
 import { ProductFilterComponent } from './product-filter/product-filter.component';
 import { SortProductsComponent } from './sort-products/sort-products.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { CatalogCategoriesComponent } from './catalog-categories/catalog-categories.component';
 
 @NgModule({
   imports: [
@@ -22,7 +24,7 @@ import { SortProductsComponent } from './sort-products/sort-products.component';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: MainPageComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
@@ -40,6 +42,8 @@ import { SortProductsComponent } from './sort-products/sort-products.component';
     CatalogProductsComponent,
     ProductFilterComponent,
     SortProductsComponent,
+    MainPageComponent,
+    CatalogCategoriesComponent,
   ],
   bootstrap: [
     AppComponent,
