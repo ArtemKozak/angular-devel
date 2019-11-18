@@ -18,23 +18,13 @@
   </div>
   <div class="row">
     <div class="col-fixed col-sm-3" id="filters">
-      <div class="cell-fixed filters">
-        <div class="filters-hd">
-          <p class="h3"><i class="fa-filter"></i>Фильтры</p>
-        </div>
-        <div class="tabs tabs-catalog">
-          <ul>
-            <li class="active"><span>Все</span></li>
-            <li><span>Выбранные</span></li>        
-          </ul>
-        </div>
-        <div class="filters-bd tabs-content">
-        </div>
-      </div>
+      <app-product-filter>
+      </app-product-filter>
     </div>
     <div class="col-fixed col-sm-9" id="product-list">
-      <div class="container-fluid sort-forms-conyainer">
-        <div class="row sort-row">
+      
+        <app-sort-products></app-sort-products>
+        <!-- <div class="row sort-row">
           <div class="col-auto form-group">
             <div class="row">
               <div class="col-auto label-col">
@@ -68,8 +58,7 @@
               </div>
             </div>
           </div> 
-        </div>
-      </div>
+        </div> -->
       <div class="container-fluid">
         <div class="container-fluid container-product" *ngFor="let product of products; index as productId">
           <div class="card">

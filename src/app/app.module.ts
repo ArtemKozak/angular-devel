@@ -14,6 +14,7 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { CatalogProductsComponent } from './catalog-products/catalog-products.component';
 import { ProductFilterComponent } from './product-filter/product-filter.component';
+import { SortProductsComponent } from './sort-products/sort-products.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,7 @@ import { ProductFilterComponent } from './product-filter/product-filter.componen
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
-      { path: 'catalog', component: CatalogProductsComponent },
+      { path: 'phones', component: CatalogProductsComponent },
     ])
   ],
   declarations: [
@@ -38,6 +39,7 @@ import { ProductFilterComponent } from './product-filter/product-filter.componen
     ShippingComponent,
     CatalogProductsComponent,
     ProductFilterComponent,
+    SortProductsComponent,
   ],
   bootstrap: [
     AppComponent,
