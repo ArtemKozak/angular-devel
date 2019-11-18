@@ -24,6 +24,9 @@
 .container-product {
   width: auto;
 }
+.sort-row {
+  padding-left: 15px; 
+}
 .card-horizontal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -41,6 +44,7 @@
 }
 .product-image{
   padding: 0;
+  
   min-width: 145px;
 }
 .product-image img{
@@ -52,10 +56,12 @@
      object-position: 0 0;
 }
 .img-square-wrapper{
+  margin: auto;
   width: 145px;
   height: 200px;
 }
 .price-row { 
+  margin: auto;
   text-align: right;
 }
 span.value{
