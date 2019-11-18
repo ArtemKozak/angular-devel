@@ -24,9 +24,6 @@
 .container-product {
   width: auto;
 }
-.sort-row {
-  padding-left: 15px; 
-}
 .card-horizontal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -38,6 +35,9 @@
 .product-row{
   margin: 0;
   width: 100%
+}
+a {
+  text-decoration: none;
 }
 .product-description{
   min-width: 200px;
@@ -61,11 +61,9 @@
   height: 200px;
 }
 .price-row { 
-  margin: auto;
   text-align: right;
 }
 span.value{
-  
   display: block;
   float: right;
   padding-top: 7px;
@@ -81,7 +79,16 @@ span.value{
     width: 100%;
   }
   .img-square-wrapper{
-    margin: a
+    margin: auto;
+  }
+  span.value {
+    position: relative;
+    margin: auto;
+  }
+  .buy-button{
+      display: block;
+  float: left;
+    margin: auto;
   }
   .card-title {
     padding-top: 15px;

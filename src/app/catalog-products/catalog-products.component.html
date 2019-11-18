@@ -95,12 +95,12 @@
                         </div>
                       </div>
                       <div class="col product-price">
-                        <div class="row price-row justify-content-end">
+                        <div class="row price-row justify-content-center">
                           <div class="col price-row">
                             <span class="value">{{ product.price | currency}}</span>
                           </div>
                           <div class="col price-row">
-                            <button (click)="addToCart(product)">Купить</button>
+                            <button class="buy-button" (click)="addToCart(product)">Купить</button>
                           </div>
                         </div>
                       </div>
