@@ -33,14 +33,14 @@
       </div>
     </div>
     <div class="col-fixed col-sm-9" id="product-list">
-      <div class="container-fluid">
+      <div class="container-fluid sort-forms-conyainer">
         <div class="row">
           <div class="col-auto form-group">
             <div class="row">
-              <div class="col-auto">
+              <div class="col-auto label-col">
                 <label for="inputGroupSelect01" >Сортировать по:</label>
               </div>
-              <div class="col-auto">
+              <div class="col-auto form-control-col">
                 <select class="form-control form-control-sm" id="inputGroupSelect01">
                     <option value="0" data-value="0">возрастанию цены</option>
                     <option value="1" data-value="1">убыванию цены</option>
@@ -54,12 +54,12 @@
           </div>
           <div class="col-auto form-group" >
             <div class="row">
-              <div class="col-auto">
+              <div class="col-auto label-col">
                 <label for="inputGroupSelect02">Вначале:</label>
               </div>
-              <div class="col-auto">
+              <div class="col-auto form-control-col">
                 <select class="form-control form-control-sm" id="inputGroupSelect02">
-                  <option value="0" selected="" data-active-element="" data-value="0" >все товары</option>
+                  <option value="0" selected="" data-active-element="" data-value="0">все товары</option>
                   <option value="4" data-value="4">с вопросами</option>
                   <option value="1" data-value="1">с акциями</option>
                   <option value="2" data-value="2">с отзывами</option>
@@ -75,14 +75,14 @@
           <div class="card">
             <div class="card-body">
                 <div class="row product-row">
-                  <div class="col-xs-4 product-image text-center">
+                  <div class="col-fixe product-image text-center">
                     <div class="img-square-wrapper text-center">
                       <img class="img-product" src="https://mrfix.ua/media/catalog/product/cache/f073062f50e48eb0f0998593e568d857/a/p/apple_iphone_11_white_mrfix1.png" [title]   ="product.name + ' details'" [routerLink]="['/products', productId]">
                     </div>
                   </div>
                   <div class="col">
-                    <div class="row description-row justify-content-sm-end">
-                      <div class="col-xs-9 col-sm-9 product-description">
+                    <div class="row description-row ">
+                      <div class="col-xs-12 col-sm-12 col-md-9 product-description">
                         <h4 class="card-title">
                           <a [routerLink]="['/products', productId]" [title]="product.name + ' details'">
                           {{ product.name }}
@@ -95,11 +95,11 @@
                         </div>
                       </div>
                       <div class="col product-price">
-                        <div class="row price-row">
-                          <div class="container-fluid price-row">
+                        <div class="row price-row justify-content-end">
+                          <div class="col price-row">
                             <span class="value">{{ product.price | currency}}</span>
                           </div>
-                          <div class="container-fluid price-row">
+                          <div class="col price-row">
                             <button (click)="addToCart(product)">Купить</button>
                           </div>
                         </div>
