@@ -19,43 +19,55 @@
   <div class="row">
     <div class="col-fixed col-sm-3" id="filters">
       <div class="cell-fixed filters">
-        <div class="filters-hd" data-filters-head="">
+        <div class="filters-hd">
           <p class="h3"><i class="fa-filter"></i>Фильтры</p>
         </div>
         <div class="tabs tabs-catalog">
-          <ul data-tab-nav="tabs-filters">
+          <ul>
             <li class="active"><span>Все</span></li>
             <li><span>Выбранные</span></li>        
           </ul>
         </div>
-        <div class="filters-bd tabs-content" data-tab-content="tabs-filters">
+        <div class="filters-bd tabs-content">
         </div>
       </div>
     </div>
     <div class="col-fixed col-sm-9" id="product-list">
       <div class="container-fluid">
-        <div class="form-inline">
-          <div class="form-group">
-            <label for="inputGroupSelect01">Сортировать по:</label>
-            <select class="form-control form-control-sm" id="inputGroupSelect01">
-                <option value="0" data-value="0" data-order-token="" data-param-name="sort" data-tracking-id="">возрастанию цены</option>
-                <option value="1" data-value="1" data-order-token="" data-param-name="sort" data-tracking-id="">убыванию цены</option>
-                <option value="2" data-value="2" data-order-token="" data-param-name="sort" data-tracking-id="">популярности</option>
-                <option value="3" selected="" data-active-element="" data-value="3" data-order-token="" data-param-name="sort" data-tracking-id="">новизне </option>
-                <option value="4" data-value="4" data-order-token="" data-param-name="sort" data-tracking-id="">оценке товара</option>
-                <option value="5" data-value="5" data-order-token="" data-param-name="sort" data-tracking-id="">наименованию</option>
-            </select>
+        <div class="row">
+          <div class="col-auto form-group">
+            <div class="row">
+              <div class="col-auto">
+                <label for="inputGroupSelect01" >Сортировать по:</label>
+              </div>
+              <div class="col-auto">
+                <select class="form-control form-control-sm" id="inputGroupSelect01">
+                    <option value="0" data-value="0">возрастанию цены</option>
+                    <option value="1" data-value="1">убыванию цены</option>
+                    <option value="2" data-value="2">популярности</option>
+                    <option value="3" selected="" data-active-element="" data-value="3">новизне </option>
+                    <option value="4" data-value="4">оценке товара</option>
+                    <option value="5" data-value="5">наименованию</option>
+                </select>
+              </div>
+            </div>
           </div>
-          <div class="form-group" >
-            <label for="inputGroupSelect02">Вначале:</label>
-            <select class="form-control form-control-sm" id="inputGroupSelect02">
-              <option value="0" selected="" data-active-element="" data-value="0" data-order-token="" data-param-name="sr" data-tracking-id="">все товары</option>
-              <option value="4" data-value="4" data-order-token="" data-param-name="sr" data-tracking-id="">с вопросами</option>
-              <option value="1" data-value="1" data-order-token="" data-param-name="sr" data-tracking-id="">с акциями</option>
-              <option value="2" data-value="2" data-order-token="" data-param-name="sr" data-tracking-id="">с отзывами</option>
-              <option value="3" data-value="3" data-order-token="" data-param-name="sr" data-tracking-id="">с видео</option>
-            </select>
-          </div>            
+          <div class="col-auto form-group" >
+            <div class="row">
+              <div class="col-auto">
+                <label for="inputGroupSelect02">Вначале:</label>
+              </div>
+              <div class="col-auto">
+                <select class="form-control form-control-sm" id="inputGroupSelect02">
+                  <option value="0" selected="" data-active-element="" data-value="0" >все товары</option>
+                  <option value="4" data-value="4">с вопросами</option>
+                  <option value="1" data-value="1">с акциями</option>
+                  <option value="2" data-value="2">с отзывами</option>
+                  <option value="3" data-value="3">с видео</option>
+                </select>
+              </div>
+            </div>
+          </div> 
         </div>
       </div>
       <div class="container-fluid">

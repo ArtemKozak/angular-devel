@@ -13,6 +13,7 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { CatalogProductsComponent } from './catalog-products/catalog-products.component';
+import { ProductFilterComponent } from './product-filter/product-filter.component';
 
 @NgModule({
   imports: [
@@ -36,6 +37,7 @@ import { CatalogProductsComponent } from './catalog-products/catalog-products.co
     CartComponent,
     ShippingComponent,
     CatalogProductsComponent,
+    ProductFilterComponent,
   ],
   bootstrap: [
     AppComponent,
