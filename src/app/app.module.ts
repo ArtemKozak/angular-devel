@@ -38,7 +38,8 @@ import { CatalogProductsComponent } from './catalog-products/catalog-products.co
     CatalogProductsComponent,
   ],
   bootstrap: [
-    AppComponent
+    AppComponent,
+    TopBarComponent
   ]
 })
 export class AppModule { }
