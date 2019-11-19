@@ -11,13 +11,8 @@
   padding: 0;
 }
 .total-row {
+  margin: 0;
   width: 100%;
-}
-#product-list {
-  padding-right: 0; 
-}
-#filters {
-  
 }
 .container-product {
   width: auto;
