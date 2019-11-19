@@ -2,10 +2,37 @@
   padding: 0;
 }
 .back-image {
-  height: 25rem;
-  
-     
+  height: 40rem;
+  position: relative;
 }
+
+.example_beauty{
+  
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 100 0;
+
+}
+.back-image {
+  display:inline-block;
+  position:relative;
+
+}
+.back-image app-catalog-categories {
+  display:inline-block;
+  position:absolute;
+  width: 100%;
+  bottom: 0px;
+  left:0px;
+  top: 50%;
+  margin-top: -50px;
+  padding: 0;
+}
+
+
 .back-image img{
   width: 100%;
   height: 100%;
@@ -14,9 +41,29 @@
   -o-object-position: 0 0;
      object-position: 100 0;
 }
+.app-catalog-categories {
+  position: absolute;
+  top: 0%;
+}
 
 @media (max-width: 576px) {
-  .back-image {
+  .back-image1 {
     height: 24rem;
+  } 
+  .back-image {
+    height: 480px !important;
+  }
+  .card {
+    height: 6rem;
+    width: 18rem;
+  }
+}
+@media (max-width: 731px) { 
+  .back-image app-catalog-categories {
+    margin: 0 !important;
+    top: 0;
+  }
+  .back-image {
+    height: 607px;
   }
 }

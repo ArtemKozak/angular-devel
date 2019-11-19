@@ -11,7 +11,11 @@
   -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.19);
   box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.19);
 }
-.row { 
+.table-card-body {
+  height: 100%; 
+  width: 100%
+}
+.row {
   padding: 0.5rem 0;
   margin: 1rem 0 0 0;
 }
@@ -21,18 +25,14 @@
 .row-card-body {
   height: 100%;
 }
-.card-text {
+td {
   
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.1rem;
-  margin-top:10%;
 }
 @media (max-width: 576px) { 
   .card {
     height: 6rem;
     width: 18rem;
-  }
-  .card-text {
-    margin-top: 6%;
   }
 }
