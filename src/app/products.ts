@@ -12,6 +12,24 @@ export const products = [
     rating: 3.8 
   },
   {
+     name: 'Phone Mini',
+    price: 699,
+    description: 'A great phone with one of the best cameras',
+    rating: 3.8 
+  },
+  {
+     name: 'Phone Mini',
+    price: 699,
+    description: 'A great phone with one of the best cameras',
+    rating: 3.8 
+  },
+  {
+     name: 'Phone Mini',
+    price: 699,
+    description: 'A great phone with one of the best cameras',
+    rating: 3.8 
+  },
+  {
     name: 'Phone Mini',
     price: 699,
     rating: 3.8 
