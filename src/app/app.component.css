@@ -2,10 +2,11 @@ p {
   font-family: Lato;
 }
 .container {
-  
   margin: auto;
 }
-
+.container-fluid{
+  padding: 0;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
