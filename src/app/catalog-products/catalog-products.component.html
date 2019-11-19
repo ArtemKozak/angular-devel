@@ -21,44 +21,8 @@
       <app-product-filter>
       </app-product-filter>
     </div>
-    <div class="col-fixed col-sm-9" id="product-list">
-      
-        <app-sort-products></app-sort-products>
-        <!-- <div class="row sort-row">
-          <div class="col-auto form-group">
-            <div class="row">
-              <div class="col-auto label-col">
-                <label for="inputGroupSelect01" >Сортировать по:</label>
-              </div>
-              <div class="col-auto form-control-col">
-                <select class="form-control form-control-sm" id="inputGroupSelect01">
-                    <option value="0" data-value="0">возрастанию цены</option>
-                    <option value="1" data-value="1">убыванию цены</option>
-                    <option value="2" data-value="2">популярности</option>
-                    <option value="3" selected="" data-active-element="" data-value="3">новизне </option>
-                    <option value="4" data-value="4">оценке товара</option>
-                    <option value="5" data-value="5">наименованию</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="col-auto form-group" >
-            <div class="row">
-              <div class="col-auto label-col">
-                <label for="inputGroupSelect02">Вначале:</label>
-              </div>
-              <div class="col-auto form-control-col">
-                <select class="form-control form-control-sm" id="inputGroupSelect02">
-                  <option value="0" selected="" data-active-element="" data-value="0">все товары</option>
-                  <option value="4" data-value="4">с вопросами</option>
-                  <option value="1" data-value="1">с акциями</option>
-                  <option value="2" data-value="2">с отзывами</option>
-                  <option value="3" data-value="3">с видео</option>
-                </select>
-              </div>
-            </div>
-          </div> 
-        </div> -->
+    <div class="col-fixed col-sm-9" id="product-list">      
+      <app-sort-products></app-sort-products>
       <div class="container-fluid">
         <div class="container-fluid container-product" *ngFor="let product of products; index as productId">
           <div class="card">

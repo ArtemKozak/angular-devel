@@ -16,6 +16,9 @@
 .container-fluid {
   padding: 0;
 }
+.col-auto {
+  padding: 0.5rem;
+}
 .row-card-body {
   height: 100%;
 }
