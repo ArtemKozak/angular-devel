@@ -1,14 +1,7 @@
 <div class="container-fluid">
   <div class="card ">
-    <div class="card-header text-center">
-      <div class="row container-fluid" style="background: grey">
-        <div class="col container-fluid justify-content-center">
-          <button type="button " class="btn btn-light">Light</button>
-        </div>
-        <div class="col container-fluid ">
-          <button type="button " class="btn btn-light" style="margin: auto">Light</button>
-        </div>
-      </div>
+    <div class="card-header text-left">
+      <h5>Фильтры</h5>
     <!-- <ul class="nav nav-tabs card-header-tabs">
       <li class="nav-item">
         <a class="nav-link active">Все</a>
@@ -17,17 +10,28 @@
         <a class="nav-link">Выбранные</a>
       </li>
     </ul> -->
-  </div>
-    <div class="filters-hd">
-      <p class="h3"><i class="fa-filter"></i>Фильтры</p>
     </div>
-    <div class="tabs tabs-catalog">
-      <ul>
-        <li class="active"><span>Все</span></li>
-        <li><span>Выбранные</span></li>        
-      </ul>
+    <div class="filters-hd text-center">
+      <div class="row container-fluid" style="background: grey">
+        <div class="col container-fluid justify-content-center">
+          <button type="button" class="button-filter-hd border-bottom btn btn-light">Все</button>
+        </div>
+        <div class="col container-fluid ">
+          <button type="button" class="button-filter-hd border-bottom btn btn-light">Выбранные</button>
+        </div>
+      </div>
     </div>
-    <div class="filters-bd tabs-content">
+    <div class="filters-bd text-left">
+      <div *ngFor="let filter of filters; index as filterId">
+        <input type="checkbox" id="cbx" style="display: none;">
+        <label for="cbx" class="check">
+          <svg width="18px" height="18px" viewBox="0 0 18 18">
+            <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+            <polyline points="1 9 7 14 15 4"></polyline>
+          </svg>  {{ filter.name }}
+        </label>
+        {{ filter.name }}
+      </div>
     </div>
   </div>
 </div>
