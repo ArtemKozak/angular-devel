@@ -3,8 +3,9 @@
 }
 .back-image {
   height: 24rem;
-  
+
 }
+
 @media (max-width: 576px) {
   .back-image {
     height: 24rem;
