@@ -1,8 +1,11 @@
 .container-fluid{
   background: wheat;
   border-radius:  0 3px 3px 0;
-  padding: 5px;
+  padding: 0;
   min-width: 140px;
+}
+.card-header {
+  padding: 0;
 }
 
 @media (min-width: 992px) {
