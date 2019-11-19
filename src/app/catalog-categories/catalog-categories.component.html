@@ -1,33 +1,22 @@
-<div class="container-fluid">
-  <div class="container">
-    <div class="row">
-      <div class="col-6"> 
-        <div class="container-fluid">
-          <a [routerLink]="['/phones']">Телефоны</a>
-        </div>
-      </div>
-      <div class="col-6"> 
-        <div class="container-fluid">
-          <a [routerLink]="['/']">Планшеты</a>
-        </div>
-      </div>
+<div class="card-desk">
+  <div class="card  bg-light mb-3" [routerLink]="['/phones']">
+    <div class="card-body">
+      <h5 class="card-text">Телефоны</h5>
+    </div>
+  </div>
+  <div class="card bg-light mb-3" [routerLink]="['/']">
+    <div class="card-body">
+      <h5 class="card-text">Планшеты</h5>
+    </div>
+  </div>
+  <div class="card bg-light mb-3" [routerLink]="['/']">
+    <div class="card-body">
+      <h5 class="card-text">Ноутбуки</h5>
+    </div>
+  </div>
+  <div class="card bg-light mb-3" [routerLink]="['/']">
+    <div class="card-body">
+      <h5 class="card-text">Аксессуары</h5>
     </div>
   </div>
 </div>
-<div class="container-fluid">
-  <div class="container">
-    <div class="row">
-      <div class="col-6"> 
-        <div class="container-fluid">
-          <a [routerLink]="['/']">Ноутбуки</a>
-        </div>
-      </div>
-      <div class="col-6"> 
-        <div class="container-fluid">
-          <a [routerLink]="['/']">Аксессуары</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
