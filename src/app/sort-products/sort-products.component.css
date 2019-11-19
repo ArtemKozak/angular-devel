@@ -22,7 +22,7 @@
   padding: 0;
 }
 @media (max-width: 576px) {
-  .sort-forms-conyainer{
+  .sort-forms-container {
     width: 300px;
   }
   .label-col {
