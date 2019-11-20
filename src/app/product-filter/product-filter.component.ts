@@ -9,7 +9,6 @@ import { filters } from '../filters';
 })
 export class ProductFilterComponent implements OnInit {
   filters = filters;
-  
   constructor() { }
 
   ngOnInit() {
