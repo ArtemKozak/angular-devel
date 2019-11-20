@@ -3,9 +3,8 @@
     <div class="card-header text-left">
       <h5>Фильтры</h5>
       <button class="show-blck" (click)="showblocks(showBlock)">Показать блок</button>
-
     </div>
-    <div *ngIf="!showBlock" class="showBlock">
+    <div *ngIf="showBlock" class="showBlock">
       <div class="filters-hd text-center">
         <div class="row container-fluid"  style="background: grey">
           <div class="col container-fluid justify-content-center">
