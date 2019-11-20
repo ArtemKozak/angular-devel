@@ -28,12 +28,13 @@
           <li class="custom-control custom-checkbox">
             <input type="checkbox" class="custom-control-input" id={{filterId}}>
             <label class="custom-control-label filter-label" for={{filterId}}>{{ filter.name }}</label>
+              <div class="custom-control custom-checkbox filts" *ngFor="let filt of filter.filt; index as filterFiltId" style="margin-left: 0px">
+                <input type="checkbox" class="custom-control-input" [id]="'filt'+filterId+filterFiltId">
+                <label class="custom-control-label filt-label" for="{{'filt'+filterId+filterFiltId}}"> {{filt}}
+                </label>
+              </div>
           </li>
-          <li class="custom-control custom-checkbox filts" *ngFor="let filt of filter.filt; index as filterFiltId" style="margin-left: 13px">
-            <input type="checkbox" class="custom-control-input" [id]="'filt'+filterId+filterFiltId">
-            <label class="custom-control-label filt-label" for="{{'filt'+filterId+filterFiltId}}"> {{filt}}
-            </label>
-          </li>
+          
         </div>
       </div>
     </div>

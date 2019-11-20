@@ -45,8 +45,18 @@ label {
     border-bottom: 0 !important;
   }
 }
-/* @media (max-width: 900px) {
-} */
+@media (max-width: 900px) {
+  label {
+    font-size: 10.5px;
+  }
+  .filter-label {
+    font-size: 11px;
+    padding-top: 4px;
+  }
+  .filt-label {
+    padding-top: 5px;
+  }
+}
 @media (max-width: 576px) { 
   .container-fluid {
     border-radius: 3px;
