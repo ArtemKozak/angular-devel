@@ -25,13 +25,14 @@
       <div *ngFor="let filter of filters; index as filterId">
         <div class="container-filters">
           
-          <div class="custom-control custom-checkbox">
+          <li class="custom-control custom-checkbox">
             <input type="checkbox" class="custom-control-input" id={{filterId}}>
             <label class="custom-control-label" style="padding-top: 3px" for={{filterId}}>{{ filter.name }}</label>
-          </div>
-          <li class="filts" *ngFor="let filt of filter.filt; index as filterFiltId">
-            <input type="checkbox" class="custom-control-input">
-            {{filt}}
+          </li>
+          <li class="custom-control custom-checkbox filts" *ngFor="let filt of filter.filt; index as filterFiltId" style="margin-left: 13px">
+            <input type="checkbox" class="custom-control-input" [id]="'filt'+filterId+filterFiltId">
+            <label class="custom-control-label" style="padding-top: 3px" for="{{'filt'+filterId+filterFiltId}}"> {{filt}}
+            </label>
           </li>
         </div>
       </div>

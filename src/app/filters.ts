@@ -17,6 +17,6 @@ export const filters = [
   {
     name: "Рейтинг",
     id: 3,
-    filt: [0, 2, 3, 4, 5],
+    filt: [0, 2, 3, 4],
   },
 ]
