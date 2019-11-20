@@ -2,39 +2,33 @@
   <div class="card ">
     <div class="card-header text-left">
       <h5>Фильтры</h5>
-    <!-- <ul class="nav nav-tabs card-header-tabs">
-      <li class="nav-item">
-        <a class="nav-link active">Все</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">Выбранные</a>
-      </li>
-    </ul> -->
+      <button class="show-blck" (click)="showblocks(showBlock)">Показать блок</button>
+
     </div>
-    <div class="filters-hd text-center">
-      <div class="row container-fluid"  style="background: grey">
-        <div class="col container-fluid justify-content-center">
-          <button type="button" class="button-filter-hd border-bottom btn btn-light">Все</button>
-        </div>
-        <div class="col container-fluid">
-          <button type="button" class="button-filter-hd border-bottom btn btn-light">Выбранные</button>
+    <div *ngIf="!showBlock" class="showBlock">
+      <div class="filters-hd text-center">
+        <div class="row container-fluid"  style="background: grey">
+          <div class="col container-fluid justify-content-center">
+            <button type="button" class="button-filter-hd border-bottom btn btn-light">Все</button>
+          </div>
+          <div class="col container-fluid">
+            <button type="button" class="button-filter-hd border-bottom btn btn-light">Выбранные</button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="filters-bd text-left">
-      <div *ngFor="let filter of filters; index as filterId">
-        <div class="container-filters">
-          
-          <li class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id={{filterId}}>
-            <label class="custom-control-label filter-label" for={{filterId}}>{{ filter.name }}</label>
+      <div class="filters-bd text-left">
+        <div *ngFor="let filter of filters; index as filterId">
+          <div class="container-filters">
+            <li class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id={{filterId}}>
+              <label class="custom-control-label filter-label" for={{filterId}}>{{ filter.name }}</label>
               <div class="custom-control custom-checkbox filts" *ngFor="let filt of filter.filt; index as filterFiltId" style="margin-left: 0px">
                 <input type="checkbox" class="custom-control-input" [id]="'filt'+filterId+filterFiltId">
                 <label class="custom-control-label filt-label" for="{{'filt'+filterId+filterFiltId}}"> {{filt}}
                 </label>
               </div>
-          </li>
-          
+            </li>
+          </div>
         </div>
       </div>
     </div>

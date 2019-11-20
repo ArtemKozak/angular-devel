@@ -17,6 +17,7 @@ import { ProductFilterComponent } from './product-filter/product-filter.componen
 import { SortProductsComponent } from './sort-products/sort-products.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { CatalogCategoriesComponent } from './catalog-categories/catalog-categories.component';
+import { ShowBlockService } from './show-block.service';
 
 @NgModule({
   imports: [
@@ -48,7 +49,8 @@ import { CatalogCategoriesComponent } from './catalog-categories/catalog-categor
   bootstrap: [
     AppComponent,
     TopBarComponent
-  ]
+  ],
+  providers: [ShowBlockService]
 })
 export class AppModule { }
 
