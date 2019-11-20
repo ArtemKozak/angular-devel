@@ -26,6 +26,17 @@ h5 {
 .filters-bd{
   padding: 0 5px;
 }
+label {
+  font-weight: initial;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.filter-label, .filt-label {
+  padding-top: 3px;
+}
+.filter-label{
+  font-weight: bold;
+}
 @media (max-width: 1247px) {
   .filters-hd .row button {
     border: 1px solid rgb(226, 226, 226);
@@ -34,7 +45,8 @@ h5 {
     border-bottom: 0 !important;
   }
 }
-
+/* @media (max-width: 900px) {
+} */
 @media (max-width: 576px) { 
   .container-fluid {
     border-radius: 3px;
